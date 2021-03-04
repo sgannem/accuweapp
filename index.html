@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Weather app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon.gif" type="image/gif" sizes="16x16">
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/all.css">
+	<script  src="js/api.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/moment.js"></script>
+  </head>
+  <body>
+	<div class="header">
+		<!-- <div class="container-fluid"> -->
+		<div class="row">
+			<div class="col-sm-3 mycard">
+				<a href="#" class="btn-lg right">
+					<span class="fa fa-cloud"></span> weather app
+				</a>
+			</div>
+			<div class="col-sm-6 mycard">
+				<div class="input-group mb-3">
+					<input type="text" id="name" class="form-control" placeholder="city_name" aria-label="city name" aria-describedby="basic-addon2">
+					<div class="input-group-append">
+					<button class="btn btn-outline-secondary" type="button" onclick="loadDoc()"><span class="glyphicon glyphicon-search"></span> Search</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- </div> -->
+	</div>
+
+  <!-- <label>Enter City name: </label>
+  <input class="" id="name" type="text" placeholder="City_Name" name="name"> -->
+  
+<div class="container-fluid">
+	<div class="row">
+	<div class="col-md-3 mycard">
+		<div class="widget">
+			<div class="left-panel">
+				<div class="date">
+					<span id="dataDate">Monday, 20 Aug 2018</span>
+				</div>
+				<div class="city"><span class="fas fa-city"></span>
+					<span id="dataCity">Mumbai</span></div>
+				</div>
+				<div class="temp">
+					<span class="fa fa-cloud"></span><span id="dataTemperature">27</span>&deg;
+				</div>
+			</div>
+		</div>
+	</div>
+		<!-- <div class="col-md-3 mycard">Mon</div>
+		<div class="col-md-3 mycard">Tue</div> -->
+	</div>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer class="bg-light text-center text-lg-start">
+	<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">© 2020 Copyright</div>
+</footer>
+
+</body>
+</html>
